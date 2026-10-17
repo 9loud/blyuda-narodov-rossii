@@ -49,6 +49,8 @@ async function shot(name, url, viewport, fullPage) {
 }
 
 await shot('home-d', site + 'index.html', DESKTOP, true);
+await shot('home-v', site + 'index.html', DESKTOP, false);
+await shot('catalog-v', site + 'catalog.html', DESKTOP, false);
 await shot('catalog-d', site + 'catalog.html', DESKTOP, true);
 await shot('modal-d', site + 'catalog.html?open=shchi', DESKTOP, false);
 await shot('about-d', site + 'about.html', DESKTOP, true);

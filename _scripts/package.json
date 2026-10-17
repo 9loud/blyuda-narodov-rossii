@@ -11,6 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "pptxgenjs": "^4.0.1",
     "puppeteer-core": "^25.14.0"
   }
 }
