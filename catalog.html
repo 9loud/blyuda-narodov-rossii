@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог блюд — Блюда народов России</title>
+<meta name="description" content="Каталог блюд народов России: поиск по названию и ингредиентам, фильтры по кухням и категориям, истории и рецепты.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Блюда народов России</a>
+    <nav class="nav" aria-label="Основные страницы">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html" class="active" aria-current="page">Каталог</a>
+      <a href="about.html">О проекте</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap page-head">
+    <h1>Каталог блюд</h1>
+    <p class="lead-small muted">Ищите по названию или ингредиенту, выбирайте кухню и категорию. Нажмите на карточку — откроется история и рецепт блюда.</p>
+  </div>
+
+  <div class="toolbar">
+    <div class="wrap">
+      <div class="toolbar-row">
+        <label class="search">
+          <input id="search" type="search" placeholder="Поиск: название или ингредиент…" autocomplete="off" aria-label="Поиск по блюдам">
+        </label>
+      </div>
+      <div class="toolbar-row">
+        <div class="chips" id="cuisine-chips" role="group" aria-label="Фильтр по кухням"></div>
+        <div class="chips" id="category-chips" role="group" aria-label="Фильтр по категориям"></div>
+        <button class="reset" id="reset" hidden type="button">Сбросить всё</button>
+      </div>
+      <p class="count" id="count" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" hidden>
+      <p>Ничего не нашлось.</p>
+      <button class="reset" id="reset2" type="button">Сбросить фильтры</button>
+    </div>
+  </div>
+
+  <dialog class="modal" id="dish-modal" aria-labelledby="dm-title">
+    <div class="modal-inner">
+      <button class="modal-close" id="dm-close" type="button" aria-label="Закрыть окно">✕</button>
+      <div class="modal-media"><img id="dm-img" src="" alt=""></div>
+      <div class="modal-body">
+        <h2 id="dm-title"></h2>
+        <p class="modal-orig" id="dm-orig"></p>
+        <div class="meta-chips" id="dm-meta"></div>
+        <p class="modal-history" id="dm-history"></p>
+        <h3 class="subhead">Состав</h3>
+        <ul class="ingredients" id="dm-ing"></ul>
+        <h3 class="subhead">Как готовить</h3>
+        <ol class="steps" id="dm-steps"></ol>
+        <div class="fact"><span class="fact-label">Знаете ли вы? </span><span id="dm-facttext"></span></div>
+        <p class="credit" id="dm-credit" hidden></p>
+      </div>
+    </div>
+  </dialog>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-stitch" aria-hidden="true"></div>
+    <p>Школьный проект учеников 9М класса: Кирилл Чурсинов и Кирилл Кольчик.</p>
+    <p>Школа №2, г. Мурино, 2026 год. <a href="about.html">О проекте и источники</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/credits.js"></script>
+<script src="assets/js/catalog.js"></script>
+</body>
+</html>

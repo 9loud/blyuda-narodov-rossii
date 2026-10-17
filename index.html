@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Блюда народов России — школьный проект</title>
+<meta name="description" content="Интерактивный каталог блюд шести народов России: русская, татарская, башкирская, осетинская, бурятская и якутская кухни. Школьный проект учеников 9М класса, школа №2, г. Мурино.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Блюда народов России</a>
+    <nav class="nav" aria-label="Основные страницы">
+      <a href="index.html" class="active" aria-current="page">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="about.html">О проекте</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Блюда народов России</h1>
+      <p class="lead">Интерактивный каталог кухонь шести народов нашей страны: от русских щей до якутской строганины. Выберите кухню на карте — или листайте карточки ниже.</p>
+      <div class="stitch" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="map-block" aria-label="Карта кухонь России">
+    <div class="wrap">
+      <div class="map-wrap" id="map"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Шесть кухонь</h2>
+      <div class="cuisines-grid" id="cuisines"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-stitch" aria-hidden="true"></div>
+    <p>Школьный проект учеников 9М класса: Кирилл Чурсинов и Кирилл Кольчик.</p>
+    <p>Школа №2, г. Мурино, 2026 год. <a href="about.html">О проекте и источники</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/map-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
